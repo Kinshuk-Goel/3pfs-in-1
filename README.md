@@ -5,6 +5,9 @@ Allows you to search from Flatpak, Snap, and package manager (only apt supported
 
 Move 3pfs.sh to the home directory. Unfortunately, I can't automate this for you because for some reason it never works. 
 
+**IMPORTANT**
+After moving the 3pfs.sh file to the home directory, delete the git folder. Otherwise they may conflict resulting in not working. 
+
 ----------------------------------------------
 **Usage**
 
