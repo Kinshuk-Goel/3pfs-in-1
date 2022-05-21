@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
+
 NAME=${1?Error: Provide a name}
 
 echo ___
 
-echo Searching [via Apt]
+echo Searching [via DNF]
 echo ___
-sudo apt search "$NAME"
+sudo dnf search "$NAME"
 
 echo ___
 
@@ -15,8 +16,8 @@ flatpak search "$NAME"
 
 echo ___
 
-echo Searching [via Snap]
+echo Searching [via Fedora Copr]
 echo ___
-snap search "$NAME"
+sudo dnf copr search "$NAME"
 
 echo ___
